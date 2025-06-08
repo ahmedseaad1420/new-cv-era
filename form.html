@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>أكاديمية مهندس</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #e6f4f9; direction: rtl; }
+        form { background: white; padding: 20px; border-radius: 10px; max-width: 800px; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        label { display: block; margin-top: 10px; font-weight: bold; }
+        input, textarea, select { width: 100%; padding: 8px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc; }
+        button { margin-top: 20px; padding: 10px 20px; background: #0077b6; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        hr { margin: 20px 0; }
+        h1 { color: #023e8a; font-size: 24px; text-align: center; }
+        h2 { color: #03045e; }
+    </style>
+</head>
+<body>
+    <form method="POST">
+        <h1>مرحباً بكم في أكاديمية مهندس للسيرة الذاتية</h1>
+        <p style="text-align:center">يرجى تعبئة النموذج التالي لإعداد سيرتك الذاتية</p>
+
+        <h2>📄 المعلومات الشخصية</h2>
+        <label>الاسم بالعربية</label><input type="text" name="name_ar">
+        <label>الاسم بالإنجليزية</label><input type="text" name="name_en">
+        <label>البريد الإلكتروني</label><input type="email" name="email">
+        <label>رقم الجوال</label><input type="text" name="phone">
+
+        <h2>💻 المهارات</h2>
+        <textarea name="skills"></textarea>
+
+        <h2>🔒 بيانات سرية (مخصصة لأصحاب الباقات المدفوعة)</h2>
+        <label>البريد الخاص بالحساب</label><input type="email" name="private_email">
+        <label>كلمة المرور</label><input type="password" name="password">
+        <label>رابط LinkedIn</label><input type="url" name="linkedin">
+
+        <button type="submit">إرسال النموذج</button>
+    </form>
+</body>
+</html>
